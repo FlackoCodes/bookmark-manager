@@ -36,8 +36,16 @@ hr{
     justify-content: space-between;
 }
 
+.nav-list-desktop li{
+    text-transform: uppercase;
+    color: hsl(229, 8%, 60%);
+    font-weight: 400;
+    cursor: pointer;
+}
+
 .nav-list-desktop ul{
     display: flex;
+    align-items: center;
     gap: 1rem;
     font-weight: 500;
 }
@@ -90,5 +98,28 @@ hr{
     flex-direction: column;
     justify-content: space-between;
     height: 100vh; /* Full height of the viewport */
+  }
+
+  @media screen and (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+
+    .overlay{
+        display: none !important;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .login{
+        margin-top: 0;
+        background-color: hsl(0, 94%, 66%);
+        color: hsl(0, 0%, 100%) !important;
+        padding: .4rem 1rem;
+        border-radius: 5px;
+    }
+
   }
   
