@@ -59,6 +59,10 @@ hr{
     padding-top: 100px;
 }
 
+.overlay{
+    display: block;
+}
+
 .nav-list-mobile li{
     padding: .8rem 0;
     color: hsl(0, 0%, 100%);

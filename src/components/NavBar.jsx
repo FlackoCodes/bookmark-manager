@@ -1,11 +1,19 @@
+import { useState } from "react"
 import { FaFacebook, FaTwitter } from "react-icons/fa"
 
 import logo from "../images/logo-bookmark.svg"
 import hamburger from "../images/icon-hamburger.svg"
+import iconClose from "../images/icon-close.svg"
 
 
 const NavBar = () => {
+
+  const [ isOpen, setIsOpen ] = useState(true)
   
+  const toggleNav = () =>{
+    setIsOpen(!isOpen)
+  }
+
   return (
     <>
     <div className="container">
@@ -32,13 +40,14 @@ const NavBar = () => {
                 <div>
                     <div>
                         <img
-                         src={hamburger} 
+                        onClick={toggleNav}
+                         src={ isOpen ? hamburger : iconClose } 
                          alt="hamburger-menu" />
                     </div>
                 </div>
             </div>
         </header>
-        <div className= "nav-list-mobile">
+      <div className= { isOpen ? "nav-list-mobile" : "nav-list-mobile overlay"}>
             <ul>
               <hr />
                 <li>Features</li>
