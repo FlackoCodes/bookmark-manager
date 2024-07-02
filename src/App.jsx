@@ -1,3 +1,4 @@
+import CallToAct from "./components/CallToAct"
 import NavBar from "./components/NavBar"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
     <NavBar />
+    <CallToAct />
     </>
   )
 }

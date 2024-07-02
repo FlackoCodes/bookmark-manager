@@ -33,7 +33,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="mobile-menu">
+            <div className="mobile-menu" style={{zIndex: '2'}}>
                 <div>
                     <img src={logo} alt="logo" />
                 </div>
