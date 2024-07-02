@@ -58,13 +58,14 @@ const NavBar = () => {
                 <hr />
                 <li className='login'>Login</li>
             </ul>
-        </div>
-        <div
+            <div
         style={styles}
         className="icons">
         < FaFacebook color="white" style={{ marginRight: '10px' }}/>
         <FaTwitter color="white" />
     </div>
+        </div>
+       
     </div>
    
   </>

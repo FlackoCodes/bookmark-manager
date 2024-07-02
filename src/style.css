@@ -32,7 +32,7 @@ hr{
 }
 
 .nav-list-desktop{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 1.8rem 0;
     display: flex;
@@ -90,7 +90,7 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 1rem 0;
 }
@@ -99,9 +99,50 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh; /* Full height of the viewport */
+    /* height: 100vh; */
   }
 
+  .reverse{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .reverse h1{
+    color: hsl(229, 31%, 21%);
+    font-size: 1.3rem;
+  }
+
+  .reverse p{
+    color: hsl(229, 8%, 60%);
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+  .btns{
+    border-radius: 5px;
+    padding: 0.5rem 0.6rem;
+    font-weight: 600;
+    border: none;
+  }
+
+  .btn-1{
+    margin-right: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(231, 69%, 60%);
+  }
+
+  .btn-2{
+    background: hsl(0, 0%, 83%);
+    color: hsl(229, 31%, 21%);
+  }
+
+  .bookmark{
+    text-align: center;
+  }
  
 
   @media screen and (min-width: 768px) {
@@ -125,5 +166,43 @@ hr{
         border-radius: 5px;
     }
 
+    .reverse{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .bookmark{
+        margin-top: 30px;
+        text-align: start;
+    }
+
   }
   
+  @media screen and (min-width: 1024px) {
+    .reverse{
+        gap: 3rem;
+    }
+
+    .reverse h1{
+        font-size: 2rem;
+        width: 350px;
+    }
+
+    .reverse p{
+        font-size: 1.4rem;
+    }
+
+    .bookmark{
+        margin-top: 70px;
+    }
+
+    .bookmark p{
+        width: 500px;
+        margin: 30px 0;
+    }
+
+    .btns{
+        padding: .5rem .9rem;
+    }
+  }
