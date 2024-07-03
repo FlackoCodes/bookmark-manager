@@ -1,0 +1,23 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "title": "Add to Chrome",
+        "version": "Minimum version 62",
+        "imageUrl": "./images/logo-chrome.svg"
+      },
+      {
+        "id": 2,
+        "title": "Add to Firefox",
+        "version": "Minimum version 55",
+        "imageUrl": "./images/logo-firefox.svg"
+      },
+      {
+        "id": 3,
+        "title": "Add to Chrome",
+        "version": "Minimum version 46",
+        "imageUrl": "./images/logo-opera.svg"
+        }
+    ]
+  }
+  
