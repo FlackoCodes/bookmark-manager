@@ -143,7 +143,25 @@ hr{
   .bookmark{
     text-align: center;
   }
- 
+
+  .features{
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .features h2{
+    font-size: 1.2rem;
+    color: hsl(229, 31%, 21%);
+  }
+
+  .features p{
+    font-size: .9rem;
+    color: hsl(229, 8%, 60%);
+    font-weight: 400;
+    width: 285px;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
 
   @media screen and (min-width: 768px) {
     .mobile-menu{
