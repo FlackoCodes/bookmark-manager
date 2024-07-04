@@ -3,9 +3,9 @@ import accordion from "../accordion.json"
 import {  FaChevronDown , FaChevronUp } from "react-icons/fa"
 
 
+
 const FAQ = () => {
     const [ isToggled, setIsToggled ] = useState(true)
-
     const toggleAcoordion = ()=>{
         setIsToggled(!isToggled)
     }
@@ -39,6 +39,9 @@ const FAQ = () => {
                     </div>
                 ))
             }
+        </div>
+        <div className="more-info">
+            <button className="info-btn">More Info</button>
         </div>
     </div>
     </>

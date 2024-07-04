@@ -319,6 +319,91 @@ hr{
     display: block;
   }
 
+  .more-info{
+    display: block;
+  }
+
+  .info-btn{
+    border: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    font-weight: 600;
+    padding: .6rem .8rem;
+    cursor: pointer;
+  }
+
+  .contact{
+    background-color: hsl(231, 69%, 60%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+
+  .contact-us{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .contact h6{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    font-weight: 400;
+  }
+
+  .contact p{
+    font-size: 1rem;
+    padding: 1rem 0;
+    font-weight: 800;
+  }
+
+  form input, form button{
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: .6rem;
+    outline: none;
+  }
+
+  form button{
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+
+  }
+
+  footer{
+    text-align: center;
+    background-color: hsl(229, 31%, 21%);
+    padding: 1rem 0;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .footer{
+    width: 85%;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+
+  .footer>*{
+    padding: 0.3rem 0;
+  }
+
+  footer li{
+    padding: 0.3rem 0;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+
+  .footer-logo{
+    filter: brightness(0) invert(1);
+  }
+
   @media screen and (min-width: 768px) {
     .mobile-menu{
         display: none;
@@ -420,8 +505,33 @@ hr{
     .answer{
       font-size: .95rem;
     }
-  }
 
+    form input, form button {
+      display: inline-block;
+      width: auto; 
+      margin-bottom: 0;
+    }
+  
+    form input {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .footer, footer ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer ul{
+      gap: 1rem;
+    }
+
+    footer ul li:nth-child(4){
+      margin-bottom: 0 !important;
+    }
+
+  }
   
   
   @media screen and (min-width: 1024px) {
