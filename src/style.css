@@ -217,6 +217,21 @@ hr{
     padding: .4rem .8rem;
   }
 
+  .download{
+    text-align: center;
+  }
+
+  .download h5{
+    color: hsl(229, 31%, 21%);
+  }
+
+  .download p{
+    color: hsl(229, 8%, 60%);
+    font-size: .9rem;
+    width: 300px;
+    margin: 10px 0;
+  }
+
   @media screen and (min-width: 768px) {
     .mobile-menu{
         display: none;

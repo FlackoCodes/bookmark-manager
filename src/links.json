@@ -1,5 +1,4 @@
-{
-    "data": [
+[
       {
         "id": 1,
         "title": "Add to Chrome",
@@ -10,7 +9,7 @@
         "id": 2,
         "title": "Add to Firefox",
         "version": "Minimum version 55",
-        "imageUrl": "./images/logo-firefox.svg"
+        "imageUrl": "./images/logo-opera.svg"
       },
       {
         "id": 3,
@@ -19,5 +18,4 @@
         "imageUrl": "./images/logo-opera.svg"
         }
     ]
-  }
   
