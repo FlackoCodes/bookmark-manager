@@ -333,6 +333,19 @@ hr{
         font-size: 1rem;
     }
 
+    .download header p{
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+
+    .browser-links{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+    }
+
   }
   
   @media screen and (min-width: 1024px) {
@@ -377,4 +390,21 @@ hr{
     .simple-bookmark p{
         margin: 0;
     }
+
+    .browser-links .cards{
+      width: 280px;
+      height: auto;
+      gap: 0;
+      margin: 0;
+    }
+
+    .download h5{
+      font-size: 1.2rem;
+    }
+
+    .download header p{
+      font-size: 1rem;
+      width: 600px;
+    }
+  
   }
