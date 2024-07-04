@@ -263,7 +263,61 @@ hr{
     font-weight: 500;
   }
 
+  .accordion{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
 
+  .title{
+    margin: 20px 0;
+  }
+
+  .title h6{
+    color: hsl(229, 31%, 21%);
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .title p{
+    color: hsl(229, 8%, 60%);
+    font-size: .85rem;
+  }
+
+  .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 0;
+  }
+
+  .question:hover .quest{
+    color: hsl(0, 94%, 66%);
+  }
+
+  .quest{
+    font-size: .9rem;
+    color: hsl(229, 31%, 21%);
+    text-align: start;
+  }
+
+  .answer{
+    font-size: .85rem;
+    text-align: start;
+    padding-bottom: 0.5rem;
+    color: hsl(229, 8%, 60%);
+    display: none;
+
+  }
+
+  .accordion hr{
+    border-top: .2px solid hsl(0, 0%, 83%);
+  }
+
+  .reveal-answer{
+    display: block;
+  }
 
   @media screen and (min-width: 768px) {
     .mobile-menu{
@@ -346,7 +400,29 @@ hr{
       margin: 0 auto;
     }
 
+    .accordion{
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .title h6{
+      font-size: 1.2rem;
+    }
+
+    .title p{
+      font-size: 1rem;
+    }
+
+    .question h6{
+      font-size: 1rem;
+    }
+
+    .answer{
+      font-size: .95rem;
+    }
   }
+
+  
   
   @media screen and (min-width: 1024px) {
     .reverse{
