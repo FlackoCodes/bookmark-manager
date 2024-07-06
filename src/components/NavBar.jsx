@@ -33,9 +33,9 @@ const NavBar = () => {
                     </div>
                 </div>
             </nav>
-            <div className="mobile-menu" style={{zIndex: '2'}}>
+            <div className="mobile-menu" style={{zIndex: '2', position: 'relative'}}>
                 <div>
-                    <img src={logo} alt="logo" />
+                    <img className={isOpen ? "logo-m" : "logo-m fitler-logo"} src={logo} alt="logo" />
                 </div>
                 <div>
                     <div>
@@ -77,5 +77,6 @@ export default NavBar
 
 const styles = {
   textAlign: 'center',
-  padding: '1rem 0'
+  padding: '1rem 0',
+  marginTop: '50px'
 }

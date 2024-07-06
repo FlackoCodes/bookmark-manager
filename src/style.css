@@ -403,6 +403,14 @@ hr{
     filter: brightness(0) invert(1);
   }
 
+  .logo-m{
+    color: white;
+  }
+
+  .fitler-logo{
+    filter: brightness(0) invert(1);
+  }
+
   @media screen and (min-width: 768px) {
     .mobile-menu{
         display: none;
