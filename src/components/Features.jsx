@@ -3,7 +3,6 @@ import tabOne from '../images/illustration-features-tab-1.svg'
 import tabTwo from '../images/illustration-features-tab-2.svg'
 import tabThree from '../images/illustration-features-tab-3.svg'
 
-
 const Features = () => {
 
     let headerOne = "Bookmark in one click"

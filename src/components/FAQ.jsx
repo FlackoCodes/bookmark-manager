@@ -3,11 +3,10 @@ import accordion from "../accordion.json"
 import {  FaChevronDown , FaChevronUp } from "react-icons/fa"
 
 
-
 const FAQ = () => {
     const [ isToggled, setIsToggled ] = useState(true)
     const toggleAcoordion = ()=>{
-        setIsToggled(!isToggled)
+            setIsToggled(!isToggled)
     }
  
   return (
@@ -20,7 +19,7 @@ const FAQ = () => {
         </div>
         <div className="accordion-container">
             {
-                accordion.map(data =>(
+                accordion.map((data, i) =>(
                     <div key={data.id}>
                         <hr />
                         <div style={{cursor: 'pointer'}}
@@ -31,7 +30,6 @@ const FAQ = () => {
                             {
                                 isToggled ? <FaChevronDown color="blue" /> : <FaChevronUp color="hsl(0, 94%, 66%)" />
                             }
-                            
                         </div>
                         <p className={isToggled ? "answer" : "answer reveal-answer"}>
                             {data.answer}
@@ -48,4 +46,5 @@ const FAQ = () => {
   )
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default FAQ

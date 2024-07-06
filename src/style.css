@@ -14,6 +14,19 @@ body{
     z-index: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: hsl(229, 31%, 21%);
+}
+
+p{
+  color: hsl(229, 8%, 60%);
+}
+
 img{
     max-width: 100%;
 }
@@ -110,12 +123,10 @@ hr{
   }
 
   .reverse h1{
-    color: hsl(229, 31%, 21%);
     font-size: 1.3rem;
   }
 
   .reverse p{
-    color: hsl(229, 8%, 60%);
     font-size: .9rem;
     font-weight: 400;
     margin: 15px 0;
@@ -152,12 +163,10 @@ hr{
   
   .features h2{
     font-size: 1.2rem;
-    color: hsl(229, 31%, 21%);
   }
 
   .features p{
     font-size: .9rem;
-    color: hsl(229, 8%, 60%);
     font-weight: 400;
     width: 285px;
     margin: 0 auto;
@@ -167,7 +176,6 @@ hr{
   .main-features h3{
     font-size: .8rem;
     font-weight: 500;
-    color: hsl(229, 8%, 60%);
     padding: 5px 0;
     position: relative;
     display: inline-block;
@@ -196,10 +204,6 @@ hr{
   }
 
 
-  .features h4{
-    color: hsl(229, 31%, 21%);
-  }
-
   .about-features{
     margin: 50px 0;
   }
@@ -221,12 +225,9 @@ hr{
     text-align: center;
   }
 
-  .download h5{
-    color: hsl(229, 31%, 21%);
-  }
+
 
   .download header p{
-    color: hsl(229, 8%, 60%);
     font-size: .9rem;
     width: 300px;
     /* margin: 0 auto; */
@@ -275,13 +276,11 @@ hr{
   }
 
   .title h6{
-    color: hsl(229, 31%, 21%);
     font-size: 1rem;
     margin: 10px 0;
   }
 
   .title p{
-    color: hsl(229, 8%, 60%);
     font-size: .85rem;
   }
 
@@ -298,7 +297,6 @@ hr{
 
   .quest{
     font-size: .9rem;
-    color: hsl(229, 31%, 21%);
     text-align: start;
   }
 
@@ -306,7 +304,6 @@ hr{
     font-size: .85rem;
     text-align: start;
     padding-bottom: 0.5rem;
-    color: hsl(229, 8%, 60%);
     display: none;
 
   }
@@ -335,7 +332,7 @@ hr{
 
   .contact{
     background-color: hsl(231, 69%, 60%);
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%) !important;
     text-align: center;
     padding: 2.5rem 0;
   }
@@ -346,13 +343,15 @@ hr{
   }
 
   .contact h6{
+    color: hsl(0, 0%, 100%) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: .8rem;
-    font-weight: 400;
+    font-size: .9rem;
+    font-weight: 600;
   }
 
   .contact p{
+    color: hsl(0, 0%, 100%) !important;
     font-size: 1rem;
     padding: 1rem 0;
     font-weight: 800;
@@ -370,7 +369,7 @@ hr{
 
   form button{
     background-color: hsl(0, 94%, 66%);
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-weight: 700;
     text-transform: capitalize;
 
@@ -444,7 +443,7 @@ hr{
         display: flex;
         justify-content: center;
         gap: 1rem;
-        width: 400px;
+        width: 420px;
         margin: 0 auto;
         border-bottom: .6px solid hsl(0, 0%, 83%);
     }
@@ -483,6 +482,18 @@ hr{
       flex-direction: row;
       width: 80%;
       margin: 0 auto;
+    }
+
+    .card-2, .card-3{
+      position: relative;
+    }
+
+    .card-2{
+      top: 20px;
+    }
+
+    .card-3{
+      top: 40px;
     }
 
     .accordion{
@@ -592,5 +603,13 @@ hr{
       font-size: 1rem;
       width: 600px;
     }
+
+    .main-features h3{
+      font-size: .98rem;
+      font-weight: 500;
+    }
   
+    .features p{
+      font-size: 1rem;
+    }
   }

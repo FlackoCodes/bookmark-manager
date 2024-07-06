@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
     <div className="contact">
-        <div className="contact-us">
+        <div className="contact-us" >
             <h6>35,000+ already joined</h6>
             <p>Stay up-to-date with what we’re doing</p>
             <form action="">
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
     </div>
     <footer>
-        <div className="footer">
+        <div className="footer" >
             <ul>
                 <li>
                     <img className="footer-logo" src={logo} alt="bookmark logo" />
