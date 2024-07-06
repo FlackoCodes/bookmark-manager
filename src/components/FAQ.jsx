@@ -4,10 +4,15 @@ import {  FaChevronDown , FaChevronUp } from "react-icons/fa"
 
 
 const FAQ = () => {
-    const [ isToggled, setIsToggled ] = useState(true)
-    const toggleAcoordion = ()=>{
-            setIsToggled(!isToggled)
-    }
+    const [toggledItems, setToggledItems] = useState(
+      new Array(accordion.length).fill(true) // creates a new array and fill them with true values
+    );
+  
+    const toggleAccordion = (index) => {
+      setToggledItems((prevToggledItems) => // preveToggledItems is the previous sate
+        prevToggledItems.map((item, i) => (i === index ? !item : item)) // checks if the current index is the clicked index
+      );
+    };
  
   return (
     <>
@@ -23,15 +28,15 @@ const FAQ = () => {
                     <div key={data.id}>
                         <hr />
                         <div style={{cursor: 'pointer'}}
-                        onClick={toggleAcoordion}
+                        onClick={()=>toggleAccordion(i)}
                         className="question">
                             <h6 className="quest"
                             >{data.question}</h6>
-                            {
-                                isToggled ? <FaChevronDown color="blue" /> : <FaChevronUp color="hsl(0, 94%, 66%)" />
+                            { 
+                                toggledItems[i] ? <FaChevronDown color="blue" /> : <FaChevronUp color="hsl(0, 94%, 66%)" />
                             }
                         </div>
-                        <p className={isToggled ? "answer" : "answer reveal-answer"}>
+                        <p className={toggledItems[i] ? "answer" : "answer reveal-answer"}>
                             {data.answer}
                         </p>
                     </div>
