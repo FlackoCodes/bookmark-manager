@@ -219,6 +219,7 @@ hr{
     border: none;
     font-weight: 400;
     padding: .4rem .8rem;
+    cursor: pointer;
   }
 
   .download{
@@ -262,6 +263,7 @@ hr{
     padding: 0.6rem;
     margin: 5px 0;
     font-weight: 500;
+    cursor: pointer;
   }
 
   .accordion{
@@ -318,6 +320,8 @@ hr{
 
   .more-info{
     display: block;
+    cursor: pointer;
+    cursor: pointer;
   }
 
   .info-btn{
